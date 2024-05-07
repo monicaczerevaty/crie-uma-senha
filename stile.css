@@ -5,6 +5,8 @@
     --fundo-senha: #00244D;
     --fundo-texto: #001E40;
     --borda: #0075FF;
+    --roboto-mono: 'Roboto Mono', monospace;
+    --roboto:'Roboto', sans-serif;
 }
 body{
     background-color: var(--cor-de-fundo);
@@ -38,4 +40,14 @@ body{
 }
 #campo-senha:focus{
     outline: none;
+}
+.parametro{
+    background-color: var(--fundo-texto);
+    border: 2px solid var(--branco);
+    margin-top: 32px;
+    padding: 24px;
+}
+.parametro-titulo{
+    font-family: var(--roboto-mono);
+    font-size: 28px;
 }
