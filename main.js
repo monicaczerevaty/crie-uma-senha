@@ -29,7 +29,7 @@ const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const letrasMinuscolas = 'abcdefghijklmnopqrstuvwxyz';
 const numeros = '0123456789';
 const simbolos = '!@%*?';
-const valorentropia = document.querySelector('entropia');
+const valorentropia = document.querySelector('.entropia');
 function geraSenha(){
     let alfabeto = '';
     if(checkbox[0])
@@ -54,4 +54,4 @@ function.classificaSenha(tamanhoAlfabeto){
         forcasenha.classList.add('fraca');
     }
 }
-valorentropia.textContent = 2**Math.floor(entropia)/(100e6*60*60*24)
+valorentropia.textContent = "um computador pode levar ate" + Math.floor(2**entropia)/(100e6*60*60*24)+"dias para descobrir essa senha";
