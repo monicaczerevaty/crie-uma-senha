@@ -46,17 +46,17 @@ function geraSenha(){
     }
     let senha = '';
     for (let i = 0; i < tamanhoSenha; i ++){
-    let numeroAleatorio = Math.random()*letrasMaiusculas.length;
+    let numeroAleatorio = Math.random()*alfabeto.length;
     numeroAleatorio = Math.floor(numeroAleatorio); 
-    senha = senha = letrasMaiusculas[numeroAleatorio];
+    senha = senha + alfabeto[numeroAleatorio];
     }
 }
 campoSenha.value = senha;
 classificaSenha(alfabeto.lenght);
 }
 function.classificaSenha(tamanhoAlfabeto){
-    let entropia = tamanhoSenha*Math.log2(alfabeto.lenght);
-    forcasenha.classList.remove('fraca');
+    let entropia = tamanhoSenha*Math.log2(tamanhoAlfabeto);
+    forcasenha.classList.remove('fraca','media','forte');
     if(entropia > 57){
         forcasenha.classList.add('forte');  
     } else if(entropia > 35 && entropia < 57){
