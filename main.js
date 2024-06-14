@@ -29,7 +29,6 @@ const letrasMaiusculas = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
 const letrasMinuscolas = 'abcdefghijklmnopqrstuvwxyz';
 const numeros = '0123456789';
 const simbolos = '!@%*?';
-const valorentropia = document.querySelector('.entropia');
 function geraSenha(){
     let alfabeto = '';
     if(checkbox[0].checked){
