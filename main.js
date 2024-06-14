@@ -62,6 +62,6 @@ function classificaSenha(tamanhoAlfabeto){
     } else if (entropia < 35){
         forcasenha.classList.add('fraca');
     }
-}
 const valorentropia = document.querySelector('.entropia');
-valorentropia.textContent = "um computador pode levar ate" + Math.floor(2**entropia)/(100e6*60*60*24)+"dias para descobrir essa senha.";
+valorentropia.textContent = "um computador pode levar ate" + Math.floor(2**entropia/(100e6*60*60*24))+"dias para descobrir essa senha.";
+}
