@@ -50,11 +50,10 @@ function geraSenha(){
     numeroAleatorio = Math.floor(numeroAleatorio); 
     senha = senha + alfabeto[numeroAleatorio];
     }
-}
 campoSenha.value = senha;
 classificaSenha(alfabeto.lenght);
 }
-function.classificaSenha(tamanhoAlfabeto){
+function classificaSenha(tamanhoAlfabeto){
     let entropia = tamanhoSenha*Math.log2(tamanhoAlfabeto);
     forcasenha.classList.remove('fraca','media','forte');
     if(entropia > 57){
@@ -65,4 +64,5 @@ function.classificaSenha(tamanhoAlfabeto){
         forcasenha.classList.add('fraca');
     }
 }
-valorentropia.textContent = "um computador pode levar ate" + Math.floor(2**entropia)/(100e6*60*60*24)+"dias para descobrir essa senha";
+const valorentropia = document.querySelector('.entropia');
+valorentropia.textContent = "um computador pode levar ate" + Math.floor(2**entropia)/(100e6*60*60*24)+"dias para descobrir essa senha.";
